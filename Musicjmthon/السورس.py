@@ -48,16 +48,16 @@ async def ping(client, m: Message):
 )
 async def restart(client, m: Message):
     await m.delete()
-    jmthon = await m.reply("1")
-    await jmthon.edit("2")
-    await jmthon.edit("3")
-    await jmthon.edit("4")
-    await jmthon.edit("5")
-    await jmthon.edit("6")
-    await jmthon.edit("7")
-    await jmthon.edit("8")
-    await jmthon.edit("9")
-    await jmthon.edit("**تم اعادة تشغيل سورس جمثون ميوزك بنجاح ✓**")
+    fire = await m.reply("1")
+    await fire.edit("2")
+    await fire.edit("3")
+    await fire.edit("4")
+    await fire.edit("5")
+    await fire.edit("6")
+    await fire.edit("7")
+    await fire.edit("8")
+    await fire.edit("9")
+    await fire.edit("**تم اعادة تشغيل سورس فاير ميوزك بنجاح ✓**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 
@@ -70,6 +70,9 @@ async def help(client, m: Message):
 
 🛠 هذه هي قائمـة اوامر السـورس
 
+• بار الدعم سورس  فاير  : @M_D_O_W
+• قناة فاير ميوزك ➢ 𝙅𝙤𝙞𝙣 : 『@BU_QH 』 🤍🍂.
+
 - أوامر المستخدمين: 
 • {HNDLR}بحث [عنوان المطقع | رابط يوتيوب | الرد على ملف مقطع صوتي] - لتشغيل مقطع صوتي في المكالمه
 
@@ -78,7 +81,7 @@ async def help(client, m: Message):
 
 • {HNDLR}بنك - لعرض سرعه النت للبوت
 
-• {HNDLR}الاوامر - لعرض اوامر سورس ميوزك جمثون
+• {HNDLR}الاوامر - لعرض اوامر سورس ميوزك فاير
 
 - أوامر المشرفين  : 
 • {HNDLR}استئناف - لمواصلة تشغيل المقطع الصوتي أو الفيديو المتوقف
@@ -98,13 +101,11 @@ async def repo(client, m: Message):
     REPZ = f"""
 <b>- مرحبا {m.from_user.mention}!
 
-🎶 هذا هو سورس جمثون ميوزك
+🎶 هذا هو سورس فاير ميوزك
 
 🤖  اختصاص هذا البوت لتشغيل مقاطع صوتية او مقاطع الفيديو في المكالمات الصوتية
 
 ⚒️ لعرض اوامر السورس ارسل  {HNDLR}الاوامر
 
-📚 • قناة جمثون  : @jmthon
-• قناة جمثون ميوزك @jjmto</b>
 """
     await m.reply(REPZ, disable_web_page_preview=True)
